@@ -1,0 +1,23 @@
+{
+  "name": "fullstack-backend-zero",
+  "version": "1.0.0",
+  "description": "Hoi dan It Fullstack backend zero",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tungthanh371948/demo-fullstack-backend-zero.git"
+  },
+  "author": "Tung It",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tungthanh371948/demo-fullstack-backend-zero/issues"
+  },
+  "homepage": "https://github.com/tungthanh371948/demo-fullstack-backend-zero#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
