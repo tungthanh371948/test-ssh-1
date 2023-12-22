@@ -6,32 +6,6 @@
     <link rel = "stylesheet" href="/css/styles.css">
 </head>
 
-<style> 
-   .tiltle{
-    font-size: 25;
-    FONT-WEIGHT: 600;
-    border-left: 10px;
-   } 
-
-
-    .table-container {
-        padding: 15px 20px;
-    }
-    table {
-    
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tr:hover {background-color: #ccc;}
-  </style>
-
 
 <body>
     <div class="topnav">
@@ -39,21 +13,25 @@
         <a href="/create"  >Creat User</a>
       </div>
       <div class= "table-container" >
+        <%= JSON.stringify(ListUsers) %>
         <div class = "tilte"> List Users</div>
-      
-           
+          
       <table>
         <tr>
           <th>ID</th>
           <th>Email</th>
           <th>Name</th>
           <th>City</th>
+          <th>Action</th>
         </tr>
         <tr>
           <td>Peter</td>
           <td>Griffin</td>
           <td>$100</td>
           <td>$100</td>
+          <td><button class="editbtn">edit</button>
+            <button class="delbtn">Delete</button>
+          </td>
         </tr>
         <tr>
           <td>Lois</td>
