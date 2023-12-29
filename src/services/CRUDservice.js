@@ -1,3 +1,4 @@
+const { name } = require("ejs");
 const connection = require ("../config/database")
 
 
@@ -12,6 +13,15 @@ const getUserById = async (userId) => {
     return user;
 }
 
+const getUpdateById = async (email,city,name,UserId) => {
+    let [results, fields] = await connection.query(
+        `UPDATE Users 
+        SET email =?, name = ?, city= ?
+        WHERE id = ? 
+        `,[email,city,name,UserId]
+        );
+}
+
 module.exports = {
-    getAllUsers, getUserById
+    getAllUsers, getUserById, getUpdateById
 }
